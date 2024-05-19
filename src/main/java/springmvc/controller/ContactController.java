@@ -14,7 +14,7 @@ import springmvc.model.User;
 
 public class ContactController {
 //	@Autowired
-//	private UserService userService;
+	private UserService userService;
 	@ModelAttribute
 	public void commonDataForModel(Model m) {
 		m.addAttribute("dora","Hi Rahul Dora");
