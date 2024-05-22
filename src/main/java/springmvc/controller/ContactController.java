@@ -32,6 +32,11 @@ public class ContactController {
 	public String handleform(@ModelAttribute User user,Model m) {
 		
 		System.out.println("This is Process Form");
+		
+		if (user.getUserName().isBlank()) 
+		{
+			return "redirect:/contact";
+		}
 //		this.userService.create(user); 
 		System.out.println(user);
 		return "success";
